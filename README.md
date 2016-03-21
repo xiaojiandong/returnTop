@@ -21,7 +21,7 @@
          }
        });
       } 
-# 窗口2，点击回到顶部
+# 方法2，点击回到顶部
  // 点击返回顶部
     $(function(){
        function returnTop (currentScrollTop){
