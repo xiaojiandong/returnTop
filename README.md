@@ -1,8 +1,10 @@
 # returnTop
 回到顶部
 
+
  // 绑定窗口滚动事件
-       $(window).on('scroll' , function(){
+    function bindWinScroll(){
+     $(window).on('scroll' , function(){
          var currentScrollTop  = $(window).scrollTop();
          if( currentScrollTop > DEVICE_HEIGHT ){
              returnTopObj.show();
@@ -13,6 +15,8 @@
              returnTopObj.hide();
          }
        });
+    }
+      
 
        // 点击返回顶部
        function returnTop (currentScrollTop){
