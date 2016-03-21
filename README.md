@@ -23,20 +23,20 @@
       } 
 # 方法2，点击回到顶部
  // 点击返回顶部
-    $(function(){
-       function returnTop (currentScrollTop){
-           var timer = null;
-           timer = setInterval(function(){
-               currentScrollTop = (currentScrollTop / 1.3 ).toFixed(2); // 设置滚动条缓冲
-               if( currentScrollTop < 1 ){
-                   currentScrollTop = Math.floor(currentScrollTop); //向下取整，最终为0
-               }
-               if( currentScrollTop <=0 ){
-                   clearInterval(timer);
-               }
-               $(window).scrollTop( currentScrollTop ); // 重置滚动条高度，返回顶部
-           } , 30);
-       }
-      } 
+            $(function(){
+             function returnTop (currentScrollTop){
+                   var timer = null;
+                   timer = setInterval(function(){
+                       currentScrollTop = (currentScrollTop / 1.3 ).toFixed(2); // 设置滚动条缓冲
+                    if( currentScrollTop < 1 ){
+                        currentScrollTop = Math.floor(currentScrollTop); //向下取整，最终为0
+                    }
+                    if( currentScrollTop <=0 ){
+                        clearInterval(timer);
+                    }
+                    $(window).scrollTop( currentScrollTop ); // 重置滚动条高度，返回顶部
+                } , 30);
+            }
+                      } 
 # 插入图片
 ![image](https://github.com/xiaojiandong/returnTop/blob/master/image/return-top.png)
