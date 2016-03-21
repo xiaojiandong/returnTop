@@ -22,6 +22,8 @@
        });
       } 
 # 方法2，点击回到顶部
+```javascript
+
  // 点击返回顶部
             $(function(){
              function returnTop (currentScrollTop){
@@ -38,5 +40,6 @@
                 } , 30);
             }
                       } 
+```
 # 插入图片
 ![image](https://github.com/xiaojiandong/returnTop/blob/master/image/return-top.png)
