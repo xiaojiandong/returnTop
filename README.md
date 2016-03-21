@@ -1,10 +1,15 @@
 # returnTop
 回到顶部
 
-  bindWinScroll();
- // 绑定窗口滚动事件
-    function bindWinScroll(){
-     $(window).on('scroll' , function(){
+
+   <script type="text/javascript">
+    $(function(){
+       var returnTopObj = $('.js_return_top');
+       var DEVICE_HEIGHT = $(window).height(); // 窗口高度
+       $('.js_first_page').css({'height' : DEVICE_HEIGHT + 'px' , 'background-color' : 'pink'});
+
+       // 绑定窗口滚动事件
+       $(window).on('scroll' , function(){
          var currentScrollTop  = $(window).scrollTop();
          if( currentScrollTop > DEVICE_HEIGHT ){
              returnTopObj.show();
@@ -15,8 +20,6 @@
              returnTopObj.hide();
          }
        });
-    }
-      
 
        // 点击返回顶部
        function returnTop (currentScrollTop){
@@ -32,3 +35,5 @@
                $(window).scrollTop( currentScrollTop ); // 重置滚动条高度，返回顶部
            } , 30);
        }
+    })
+</script>
