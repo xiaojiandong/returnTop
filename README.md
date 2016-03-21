@@ -1,7 +1,7 @@
 # returnTop
 回到顶部
 
-
+  bindWinScroll();
  // 绑定窗口滚动事件
     function bindWinScroll(){
      $(window).on('scroll' , function(){
