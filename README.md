@@ -3,11 +3,11 @@
 
 
 # 方法1，窗口滚动
+```javascript
     $(function(){
        var returnTopObj = $('.js_return_top');
        var DEVICE_HEIGHT = $(window).height(); // 窗口高度
        $('.js_first_page').css({'height' : DEVICE_HEIGHT + 'px' , 'background-color' : 'pink'});
-
        // 绑定窗口滚动事件
        $(window).on('scroll' , function(){
          var currentScrollTop  = $(window).scrollTop();
@@ -21,10 +21,11 @@
          }
        });
       } 
+```
 # 方法2，点击回到顶部
 ```javascript
 
- // 点击返回顶部
+            // 点击返回顶部
             $(function(){
              function returnTop (currentScrollTop){
                    var timer = null;
@@ -38,8 +39,8 @@
                     }
                     $(window).scrollTop( currentScrollTop ); // 重置滚动条高度，返回顶部
                 } , 30);
-            }
-                      } 
+             }
+            } 
 ```
 # 插入图片
 ![image](https://github.com/xiaojiandong/returnTop/blob/master/image/return-top.png)
